@@ -2,19 +2,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Menu</title>
+  <title>Tienda Inmuble</title>
   <link rel="stylesheet" type="text/css" href="estilos.css"></head>
 <body>
 <header>
-  <h1>Tienda Inmuebles Temuco</h1>
+  <h1 class="encabezado">Tienda de Inmuebles Temuco</h1>
 </header>
 <br/>
 <nav class="barra">
- <ul>
-   <li><a href="agregarInmueble.jsp">Agregar Inmueble</a></li>
-   <li><a href="agregarVendedor.jsp">Agregar Vendedor</a></li>
-   <li><a href="buscarInmueble.jsp">Buscar Inmueble</a></li>
- </ul>
+    <a href="agregarInmueble.jsp">Agregar Inmueble</a>
+    <a href="agregarVendedor.jsp">Agregar Vendedor</a>
+    <a href="buscarInmueble.jsp">Buscar Inmueble</a>
 </nav>
 </body>
 </html>

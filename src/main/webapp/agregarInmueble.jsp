@@ -8,21 +8,20 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="estilos.css"></head>
     <title>Agregar Inmueble</title>
 </head>
 <body>
 <header>
-    <nav class="barra">
-        <ul>
-            <li><a href="agregarInmueble.jsp">Agregar Inmueble</a></li>
-            <li><a href="agregarVendedor.jsp">Agregar Vendedor</a></li>
-            <li><a href="buscarInmueble.jsp">Buscar Inmueble</a></li>
-        </ul>
-    </nav>
+    <h1 class="encabezado">Agrega un nuevo inmueble</h1>
 </header>
+<nav class="barra">
+    <a href="agregarInmueble.jsp">Agregar Inmueble</a>
+    <a href="agregarVendedor.jsp">Agregar Vendedor</a>
+    <a href="buscarInmueble.jsp">Buscar Inmueble</a>
+</nav>
 <form action="agregarInmueble" method="post">
-    <div class="">
+    <div class="formulario">
         <input type="text" name="tipoConstruccion" placeholder="Ingrese el tipo de construccion">
         <input type="text" name="ubicacion" placeholder="Ingrese la ubicación geografica" maxlength="12">
         <input type="number" name="precio" placeholder="Ingrese el precio">

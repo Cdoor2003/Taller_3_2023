@@ -12,6 +12,6 @@
     <link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
 <body>
-<h1>Se ha agregado exitosmente el inmueble</h1>
+<h1 class="encabezado">Se ha agregado exitosmente el inmueble</h1>
 </body>
 </html>

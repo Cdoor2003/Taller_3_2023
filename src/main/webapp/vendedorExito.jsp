@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
 <body>
-<h1>Se ha agregado exitosmente al vendedor</h1>
-<h2>${nombreVendedor}</h2>
+<h1 class="encabezado">Se ha agregado exitosmente al vendedor</h1>
+<h2 class="encabezado">${nombreVendedor}</h2>
 </body>
 </html>
