@@ -1,5 +1,12 @@
 package model;
 
+import model.data.DBConnector;
+import model.data.dao.VendedorDAO;
+import org.jooq.DSLContext;
+import org.jooq.impl.DSL;
+
+import java.sql.Connection;
+
 public class Vendedor {
     private String nombre;
     private String rut;
@@ -54,5 +61,9 @@ public class Vendedor {
     public void setEstadoCivil(String estadoCivil) {
         this.estadoCivil = estadoCivil;
     }
-
+    public boolean agregarVendedor(){
+        Connection connection = DBConnector.connection("tiendainmueble","root","");
+        DSLContext query = DSL.using(connection);
+        return new VendedorDAO().agregarVendedor(query,this);
+    }
 }

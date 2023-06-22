@@ -1,5 +1,12 @@
 package model;
 
+import model.data.DBConnector;
+import model.data.dao.InmuebleDAO;
+import org.jooq.DSLContext;
+import org.jooq.impl.DSL;
+
+import java.sql.Connection;
+
 public class Inmueble {
     private String tipoConstruccion;
     private String ubicacionGeografica;
@@ -33,5 +40,10 @@ public class Inmueble {
 
     public void setPrecio(int precio) {
         this.precio = precio;
+    }
+    public boolean agregarInmueble(){
+        Connection connection = DBConnector.connection("tiendainmueble","root","");
+        DSLContext query = DSL.using(connection);
+        return new InmuebleDAO().agregarInmueble(query,this);
     }
 }
